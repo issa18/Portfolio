@@ -42,9 +42,9 @@
     <!--carousel of testimonial/reviews-->
 
     <footer>
-        <div class="container bg-dark">
-            <div class="row text-light pt-4">
-                <div class="col-sm-4 offset-sm-1 text-sm-left text-center">
+        <div class="container-fluid bg-dark">
+            <div class="row text-light pt-4 text-center">
+                <div class="col-sm-3 offset-sm-1 text-sm-left">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -53,16 +53,26 @@
                         <li><a href="#">Schedule Appointment</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3 text-sm-left text-center">
-                    <h5>Business Hours</h5>
-                    <ul class="list-unstyled d-none d-sm-block">
-                        <li><strong>Mon:</strong> 8am-5pm</li>
-                        <li><strong>Tues:</strong> 8am-5pm</li>
-                        <li><strong>Weds:</strong> 8am-5pm</li>
-                        <li><strong>Thur:</strong> 8am-5pm</li>
-                        <li><strong>Fri:</strong> 8am-3pm</li>
-                        <li><strong>Sat & Sun:</strong> Closed</li>
-                    </ul>
+                <div class="col-sm-3 d-block d-sm-none text-sm-left">
+                    <div class="accordian">
+                        <div class="card bg-dark">
+                            <div class="card-header">
+                                <h5> 
+                                <a class="btn text-left text-light" role="button" data-toggle="collapse" data-target="#businessHoursCollapse">Business Hours</a>
+                                </h5>
+                                <div id="businessHoursCollapse" class="collapse">
+                                    <ul class="list-unstyled card-body">
+                                        <li><strong>Mon:</strong> 8am-5pm</li>
+                                        <li><strong>Tues:</strong> 8am-5pm</li>
+                                        <li><strong>Weds:</strong> 8am-5pm</li>
+                                        <li><strong>Thur:</strong> 8am-5pm</li>
+                                        <li><strong>Fri:</strong> 8am-3pm</li>
+                                        <li><strong>Sat & Sun:</strong> Closed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>   
                 </div>
                 <div class="col text-center pb-3">
                     <h5>Connect With Us</h5>
