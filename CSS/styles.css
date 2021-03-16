@@ -9,3 +9,8 @@
 .fa-envelope-o {
     color: white;
 }
+
+/*style css for the about us page*/
+.aboutus-image {
+    border: 3px solid green;
+}
