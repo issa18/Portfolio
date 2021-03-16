@@ -1,4 +1,13 @@
 /*CSS for index.html*/
+
+.row-content {
+    padding: 3rem;
+}
+
+.card-content {
+    border: 1px solid red;
+}
+
 .instagram-icon {
     background: linear-gradient(30deg, yellow, orange, hotpink, purple, blue)
 }
