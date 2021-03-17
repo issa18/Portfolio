@@ -24,7 +24,69 @@
     <link rel="shortcut icon" href="img/profile.png">
 </head>
 <body>
-    
+    <!--Form to contact us-->
+    <div class="container">
+        <h2>Contact Us Today</h2>
+        <h3>Your Information</h3>
+        <form>
+            <div class="form-group row">
+                <div class="col-12 my-3">
+                    <label class="col-form-label sr-only" for="nameOrBusinessName">Your Name or Business Name</label>
+                    <input class="form-control form-control-lg shadow-sm" id="nameOrBusinessName" type="text" placeholder="Your Name or Business Name*" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-md-auto">
+                    <label class="col-form-label sr-only" for="phoneNum">Phone Number</label>
+                    <input class="form-control form-control-lg shadow-sm" id="phoneNum" type="text" placeholder="Phone Number*" required>
+                </div>
+                <div class="col-sm-6 mb-2">
+                    <label class="col-form-label sr-only" for="emailAddr">Email Address</label>
+                    <input class="form-control form-control-lg shadow-sm" type="text" placeholder="E-mail Address*">
+                </div>
+            </div>
+            <div class="form-group">
+                
+            </div>
+            <div class="form-group row">
+                <div class="form-check form-check-inline">
+                    <div class="col-md-3 text-nowrap">
+                        <label class="col-form-label col-form-label-lg">Job Type:</label>
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div class="col-md-3 text-nowrap">
+                        <input class="form-check-input shadow-sm" type="checkbox" name="jobType" id="residentialCheckbox" value="residential">
+                        <label class="form-check-label" for="residentialCheckbox">Residential</label>
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div class="col-md-3 text-nowrap">
+                        <input class="form-check-input shadow-sm" type="checkbox" name="jobType" id="commercialCheckbox" value="residential">
+                        <label class="form-check-label" for="commercialCheckbox">Commercial</label>
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div class="col-md-3 text-nowrap">
+                        <input class="form-check-input shadow-sm" type="checkbox" name="jobType" id="industrialCheckbox" value="industrial">
+                        <label class="form-check-label" for="industrialCheckbox">Industrial</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12 mb-3">
+                    <label class="col-form-label-lg" for="commentArea">Please include any comments here:</label>
+                    <textarea class="form-control shadow-sm" name="" id="commentArea" cols="30" rows="9" placeholder="Tell us about your project, concerns, etc."></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block shadow-sm">SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <!--Footer goes below here-->
     <footer class="site-footer">
         <div class="container-fluid">
@@ -33,9 +95,9 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Gallery</a></li>
-                        <li><a href="contactus.html">Contact Us</li>
+                        <li><a href="#">Contact Us</li>
                         <li><a href="#">Schedule Appointment</a></li>
                     </ul>
                 </div>
