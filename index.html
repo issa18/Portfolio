@@ -25,10 +25,93 @@
 </head>
 <body>
     <header>
-        <h1>State Code Electric</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <div style = "position:relative; left:-120px; top:1px;">
+                        <img class="img-fluid rounded" src="img/default.png"/>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div style = "position:relative; left:60px; top:40px;">
+                        <h1> Call Us At: (123)456-7890 </h1>
+                        <h2>Se habla Espanol! </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a id="reserveButton" class="btn btn-lg btn-primary text-nowrap" role="button">Schedule Appointment!</a>
+                </div>     
+            </div>
+        </div>
     </header>
 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#electricalNavbar">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#electricalNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="electricalNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa fa-camera-retro fa-lg"></i> Our Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!--Our paragraph about the company or mission statement goes here-->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-md-8 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/2021-03-16 19.14.44.jpg" alt="Residential Electricion" />
+                            <div class="carousel-caption">
+                                <h3>Residential Electricion</h3>
+                                <p class="d-none d-sm-block">For all your in home electrical repairs or upgrades.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/2021-03-16 19.15.14.jpg" alt="Commercial Electricion" />
+                            <div class="carousel-caption">
+                                <h3>Commercial Electricion </h3>
+                                <p class="d-none d-sm-block">Repairs and upgrades to business and shops.</p> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/industrial.jpg" alt="Industrial Electricion" />
+                            <div class="carousel-caption">
+                                <h3>Industrial Electricion</h3>
+                                <p class="d-none d-sm-block">For your variety of functions related to electrical controls, equipment, and wiring in an industrial plant or worksite.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>  
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row row-content">
             <div class="col">
@@ -46,14 +129,13 @@
         </div>
     </div>
     <!--An accordian feature for Services will go below-->
-    
     <div class="container">
         <div class="row row-content">
             <div class="col">
                 <div id="servicesAccordian" class="accordian" >
                     <div class="card">
                         <div class="card-header text-center">
-                            <h3>Services:<br><small>There's no job too big or small!</small></h3>
+                            <h3>Services:<br><small>Don't pull the plug, call us!</small></h3>
                         </div>
                         <div class="card card-content">    
                             <div class="card-header" >
@@ -68,12 +150,12 @@
                                     <div class="row pt-2">
                                         <div class="col-lg-4">
                                             <div class="media justify-content-center">
-                                                <img id="accordianImg" class="d-flex mr-3 img-thumbnail " src="img/residential.jpg" alt="residential homes">
+                                                <img id="accordianImg" class="d-flex mr-3 img-thumbnail " src="img/2021-03-16 19.14.44.jpg" alt="residential homes">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 pr-xl-5">
                                             <div>
-                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. </p>
+                                                <p>With time, the electrical system in your home may degrade due to increased and constant use by machines and appliances over the years. Like any other system, your electrical structure needs to be checked, tested, maintained and repaired regularly. This helps eliminate any danger to your family, appliances and extends the lifetime of your gadgets. Or are you simply looking to make upgrades in your home? Look no more! State Code Electric is here to help! We can work with you hand in hand to eliminate any electrical problems and conduct upgrades whenever you are in need.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -93,12 +175,12 @@
                                     <div class="row pt-2">
                                         <div class="col-lg-4">
                                             <div class="media justify-content-center">
-                                                <img id="accordianImg" class="d-flex mr-3 img-thumbnail" src="img/commercial.jpg" alt="commercial room">
+                                                <img id="accordianImg" class="d-flex mr-3 img-thumbnail" src="img/2021-03-16 19.15.14.jpg" alt="commercial room">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 pr-xl-5">
                                             <div>
-                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei.</p>
+                                                <p>Whether you need a commercial electrician to troubleshoot your electrical system or to install new fixtures, we have the skills you are looking for. Commercial places need constant and flawless electrical supply to ensure all operations are functioning smoothly. Whether it’s a factory, supermarket or office building, having a contact with a commercial electrician is always recommended. We are familiar with all aspects of this sector and we can detect and resolve any issues before they get out of hand. Whether a rewiring or reinstallation is needed, we will let you know and get it done. Our pricing is friendly, and we are honest with all our operations. For any questions, inquiries, comments, compliments, appointments or more information about our services, we are just a phone call away </p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +205,7 @@
                                         </div>
                                         <div class="col-lg-8 pr-xl-5">
                                             <div>
-                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. </p>
+                                                <p>No matter how complex your production process might be, State Code Electric has the expertise to get the job done on time and in budget. We’ve built our business providing our industrial customers the best service in the business. State Code Electric has extensive experience with control systems, materials handling, continuous and batch-type systems, conveyance controls, processing, packaging and other industrial systems for all types of industrial processing. From upgrading your electrical system to design and installation of plant-wide automation, we have the knowledge and practical experience to get the job done right.  </p>
                                             </div>
                                         </div>        
                                     </div>
@@ -136,21 +218,19 @@
         </div>
     </div>
 
-    <!--Licenses/Creditials go here-->
-
-    <!--carousel of testimonial/reviews-->
+    <p>We can identify potential electrical issues before it's too late to save you money and headaches. If you are looking for a professional electrical repair contractor to help you troubleshoot or conduct Safety Inspections on your Residential or Commercial project or remodel, then turn to State Code Electric by calling (123)456-7890 or schedule a visit today!</p>
 
     <!--Footer goes below here-->
-    <footer>
-        <div class="container-fluid bg-dark">
+    <footer class="site-footer">
+        <div class="container-fluid">
             <div class="row row-content text-light text-center">
                 <div class="col-sm-2 offset-sm-1 text-sm-left">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</li>
+                        <li><a href="gallery.html">Our Work</a></li>
+                        <li><a href="contactus.html">Contact Us</li>
                         <li><a href="#">Schedule Appointment</a></li>
                     </ul>
                 </div>
