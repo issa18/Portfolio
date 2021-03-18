@@ -13,9 +13,15 @@ a, a:hover {
     text-decoration: none; 
 }
 
-header {
+.jumbotron {
+    margin: 0;
+    padding: 30px;
     background-image: linear-gradient( #0b486b 50%, #f56217);
+<<<<<<< HEAD
     padding: 100px 0;
+=======
+    color: white; 
+>>>>>>> facd4bdb50d6582f9ce7b2bb8a5c76731c497191
 }
 
 .navbar {
