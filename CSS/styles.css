@@ -21,17 +21,27 @@ a, a:hover {
 }
 
 .navbar {
-    background: #f56217; 
+    background: #f56217;
 }
 
-.navbar-nav > li{
-    padding-left:60px;
-    padding-right:60px;
+.navbar-nav >li{
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.navbar-nav > li{
-    margin-left:10px;
-    margin-right:10px;
+.navbar-nav >li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar a {
+    float: left;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    text-align: center;
 }
 
 .site-footer {
