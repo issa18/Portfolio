@@ -1,0 +1,85 @@
+var n = this;
+function r(h, c) {
+  var k = h.split("."), d = n;
+  k[0] in d || !d.execScript || d.execScript("var " + k[0]);
+  for (var g; k.length && (g = k.shift());) {
+    k.length || void 0 === c ? d = d[g] ? d[g] : d[g] = {} : d[g] = c;
+  }
+}
+;(function(h, c) {
+  function k(a, e) {
+    function f(a) {
+      e(a);
+    }
+    var b = c.createElement("img");
+    e && (b.onload = f, b.onerror = b.onabort = f);
+    b.src = a;
+    b.width = "0";
+    b.height = "0";
+    b.style.setProperty("width", "0", "important");
+    b.style.setProperty("height", "0", "important");
+    b.style.position = "absolute";
+    b.alt = "";
+    c.body && c.body.appendChild(b);
+  }
+  function d(a) {
+    var e = "", f = 0;
+    a.v = Date.now() + Math.floor(1000 * Math.random());
+    for (var b in a) {
+      e += 0 === f ? "?" : "\x26", e = e + b + "\x3d" + a[b], f += 1;
+    }
+    return e;
+  }
+  function g() {
+    var a = c.querySelector('script[src\x3d"https://assets.sitescdn.net/ytag/ytag.min.js"]');
+    a || (a = c.createElement("script"), a.src = "https://assets.sitescdn.net/ytag/ytag.min.js", c.body.appendChild(a));
+    return a;
+  }
+  function t(a) {
+    var e = g();
+    h.ytag ? a() : e.addEventListener("load", a);
+  }
+  function u(a, e, f, b) {
+    m ? t(function() {
+      var c = h.ytag("yfpc")._yfpc;
+      f._yfpc = c;
+      b(a + e + d(f));
+    }) : b(a + e + d(f));
+  }
+  function p(a) {
+    (!0 === a || !1 === a) && (m = a) && g();
+  }
+  function v() {
+    for (var a = {}, e = h.location.search.substring(1).split("\x26"), f = 0; f < e.length; f++) {
+      var b = e[f].split("\x3d"), c = decodeURIComponent(b[0]);
+      b = decodeURIComponent(b[1]);
+      if (c in a) {
+        var d = a[c];
+        a[c] = Array.isArray(d) ? d.concat(b) : [d, b];
+      } else {
+        a[c] = b;
+      }
+    }
+    return a;
+  }
+  var l = "http:" == h.location.protocol ? "http:" : "https:", w = l + "//www.yext-pixel.com/", x = l + "//realtimeanalytics.yext.com/", m = !1;
+  l = h.yOptInQ || [];
+  for (var q; q = l.shift();) {
+    p(q[0]);
+  }
+  r("yext.analytics.optIn", p);
+  r("yext.analytics.getYextAnalytics", function(a) {
+    return function(e, d) {
+      a.pagesReferrer = c.referrer;
+      a.pageurl = c.location.pathname;
+      a.eventType = e;
+      a.pageDomain = c.location.hostname;
+      var b = v();
+      b && (a.queryParams = encodeURIComponent(JSON.stringify(b)));
+      u(m ? x : w, "campaign_pages" === a.product ? "campaign_pagespixel" : "store_pagespixel", a, function(a) {
+        k(a, d);
+      });
+    };
+  });
+})(window, document);
+
