@@ -13,7 +13,9 @@ a, a:hover {
     text-decoration: none; 
 }
 
-header {
+.jumbotron {
+    margin: 0;
+    padding: 30px;
     background-image: linear-gradient( #0b486b 50%, #f56217);
     padding: 100px 0;
 }
